@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+.article {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 938px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
+    0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
+    0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+  border-radius: 6px;
+
+  .form {
+    margin: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .legend {
+    align-self: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .caption-input {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #262626;
+
+    &-red {
+      color: #f5222d;
+    }
+  }
+
+  .article-input {
+    padding: 0 12px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &-red {
+      border: 1px solid #f5222d;
+    }
+  }
+
+  .article-textarea {
+    padding-top: 10px;
+    height: 168px;
+    background: #ffffff;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &-red {
+      border: 1px solid #f5222d;
+    }
+  }
+
+  .tag-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .tag-wrapper {
+    display: flex;
+    gap: 18px;
+  }
+
+  .tag-label {
+    width: 300px;
+  }
+
+  .tag-btn {
+    height: 40px;
+    padding: 8px 40px;
+    font-size: 16px;
+    line-height: 24px;
+    background: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &-red {
+      color: #f5222d;
+      border: 1px solid #f5222d;
+    }
+
+    &-blue {
+      color: #1890ff;
+      border: 1px solid #1890ff;
+    }
+  }
+
+  .submit {
+    margin-top: 10px;
+    width: 319px;
+    height: 40px;
+    background: #1890ff;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+.user {
+  font-family: 'Roboto';
+  font-style: normal;
+  margin: 33px auto 165px auto;
+  width: 384px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198),
+    0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035),
+    0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+  border-radius: 6px;
+}
+.form {
+  margin: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 10px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.caption-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #262626;
+}
+
+.input {
+  width: 320px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 12px;
+
+  &-error {
+    border: 1px solid #f5222d;
+  }
+}
+
+.error-text {
+  color: #f5222d;
+  bottom: 0;
+}
+
+.agreement {
+  margin-top: 10px;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 8px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.agreement-checkbox {
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+}
+
+.agreement-span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.submit {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  background: #1890ff;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
