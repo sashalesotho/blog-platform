@@ -58,7 +58,7 @@ const SignIn = ({ getUserData }) => {
               classes.input,
               (errors?.email || serverError?.errors['email or password']) && classes['input-error'],
             ].join(' ')}
-            tabIndex="2"
+            tabIndex="-4"
             placeholder="Email address"
             {...register('email', {
               required: 'Thats field is required',
@@ -78,7 +78,7 @@ const SignIn = ({ getUserData }) => {
               classes.input,
               (errors?.password || serverError?.errors['email or password']) && classes['input-error'],
             ].join(' ')}
-            tabIndex="3"
+            tabIndex="-3"
             type="password"
             placeholder="Password"
             {...register('password', {
@@ -99,7 +99,7 @@ const SignIn = ({ getUserData }) => {
             </span>
           )}
         </label>
-        <button className={classes.submit} tabIndex="6" type="submit">
+        <button className={classes.submit} tabIndex="0" type="submit">
           Login
         </button>
         <span className={classes.redirection}>

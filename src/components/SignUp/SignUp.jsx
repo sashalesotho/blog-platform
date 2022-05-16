@@ -56,7 +56,7 @@ const SignUp = () => {
               classes.input,
               (errors?.username || serverError?.errors?.username) && classes['input-error'],
             ].join(' ')}
-            tabIndex="1"
+            tabIndex="-5"
             placeholder="Username"
             {...register('username', {
               required: 'Thats feild is required',
@@ -89,7 +89,7 @@ const SignUp = () => {
             className={[classes.input, (errors?.email || serverError?.errors?.email) && classes['input-error']].join(
               ' '
             )}
-            tabIndex="2"
+            tabIndex="-4"
             placeholder="Email address"
             {...register('email', {
               required: 'Thats feild is required',
@@ -111,7 +111,7 @@ const SignUp = () => {
           <span className={classes['caption-input']}>Password</span>
           <input
             className={[classes.input, errors?.password && classes['input-error']].join(' ')}
-            tabIndex="3"
+            tabIndex="-3"
             type="password"
             placeholder="Password"
             {...register('password', {
@@ -136,7 +136,7 @@ const SignUp = () => {
           <span className={classes['caption-input']}>Repeat Password</span>
           <input
             className={[classes.input, errors?.repeatPassword && classes['input-error']].join(' ')}
-            tabIndex="4"
+            tabIndex="-2"
             type="password"
             placeholder="Password"
             {...register('repeatPassword', {
@@ -154,7 +154,7 @@ const SignUp = () => {
           <div className={classes.agreement}>
             <input
               className={classes['agreement-checkbox']}
-              tabIndex="5"
+              tabIndex="-1"
               type="checkbox"
               defaultChecked
               {...register('agree', {
@@ -169,7 +169,7 @@ const SignUp = () => {
             </span>
           )}
         </label>
-        <button className={classes.submit} tabIndex="6" type="submit">
+        <button className={classes.submit} tabIndex="0" type="submit">
           Create
         </button>
         <span className={classes.redirection}>

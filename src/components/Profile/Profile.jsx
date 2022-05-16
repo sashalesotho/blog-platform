@@ -143,6 +143,7 @@ const Profile = ({ userData, getUserData }) => {
                 if (val) {
                   return regExpUrl.test(val) || 'Image address will be correct';
                 }
+                return 'Image address will be correct';
               },
             })}
           />
