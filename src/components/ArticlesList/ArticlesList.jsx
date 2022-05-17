@@ -65,6 +65,7 @@ const ArticlesList = ({ pageData, userData, changePage }) => {
                 <button
                   type="button"
                   className={classes['title-btn']}
+                  disabled={!userData.token}
                   onClick={() => onToggleLike(article.slug, article.favorited)}
                 >
                   {heart}

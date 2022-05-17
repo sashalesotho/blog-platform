@@ -70,7 +70,7 @@ const Article = ({ userData }) => {
           <Link to={`/articles/${article.slug}`} className={classes.title}>
             {article.title}
           </Link>
-          <button type="button" className={classes['title-btn']} onClick={onToggleLike}>
+          <button type="button" className={classes['title-btn']} disabled={!userData.token} onClick={onToggleLike}>
             {heart}
             <span className={classes['favorites-count']}>{article.favoritesCount}</span>
           </button>
